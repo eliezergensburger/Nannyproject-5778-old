@@ -53,6 +53,13 @@ namespace ConsoleUI
                     new Day {  StartDay = new Time(), EndDay = new Time(0)},
                 }
             };
+            BL.FactorySingletonBL.getInstance.addMother(imma);
+            List<Mother> immaot = BL.FactorySingletonBL.getInstance.getAllMothers();
+            foreach (var m in immaot)
+            {
+                Console.WriteLine(m);
+            }
+            Console.ReadLine();
         }
 
     }
