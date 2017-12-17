@@ -7,7 +7,7 @@ using BE;
 
 namespace DAL
 {
-    public class Dal_List :IDal
+    internal class Dal_List :IDal
     {
         public int addMother(Mother m)
         {
